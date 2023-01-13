@@ -1,0 +1,87 @@
+.connect {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  /* font-weight: bold; */
+}
+
+/* .connect button {
+  line-height: 18px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 200px;
+  font-weight: bold;
+  font-size: 14px;
+} */
+
+.connect-one {
+  display: flex;
+  align-items: center;
+  background-color: #293440;
+  color: #fff;
+
+  line-height: 16px;
+  padding: 9px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.connect-one:hover {
+  background-color: #3f4e60;
+}
+
+.telegram-icon,
+.connect-two img {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.connect-two {
+  display: flex;
+  align-items: center;
+  background-color: #248bda;
+  color: #fff;
+
+  line-height: 16px;
+  padding: 9px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 150px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.connect-two:hover {
+  background-color: #207cc2;
+}
+
+/** media query */
+
+@media (width <= 768px) {
+  .connect-one {
+    display: none;
+  }
+}
+
+@media (width <= 400px) {
+  .connect-two {
+    width: 130px;
+    font-size: 12px;
+    padding: 6px;
+  }
+}

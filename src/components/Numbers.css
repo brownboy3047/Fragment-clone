@@ -1,0 +1,40 @@
+.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.numbers a {
+  text-decoration: none;
+  color: #8a98a6;
+  background-color: #202932;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.numbers small {
+  color: #fff;
+  background-color: #248bda;
+  padding: 1px 5px;
+  font-size: 11px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+@media (width <= 768px) {
+  .numbers a {
+    font-size: 24px;
+  }
+
+  .numbers small {
+    padding: 2px 7px;
+  }
+}
+
+@media (width <= 400px) {
+  .numbers a {
+    font-size: 16px;
+  }
+}

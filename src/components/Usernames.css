@@ -1,0 +1,34 @@
+.usernames a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #202932;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* .usernames a.active::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #248bda;
+  position: absolute;
+  top: 56px;
+  left: 260px;
+  border-radius: 4px;
+} */
+
+/** media query */
+
+@media (width <= 768px) {
+  .usernames a {
+    font-size: 24px;
+  }
+}
+
+@media (width <= 400px) {
+  .usernames a {
+    font-size: 16px;
+  }
+}

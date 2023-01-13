@@ -1,0 +1,164 @@
+.auction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 750px;
+}
+
+.auction-header h2 {
+  padding-left: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.auction-select-one,
+.auction-select-two {
+  margin-right: 10px;
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  background-color: #242e38;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auction-loading {
+  text-align: center;
+  color: #242424;
+}
+
+.auction-table table {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  width: 750px;
+  margin: 40px auto;
+  background-color: #212a33;
+  border-radius: 10px;
+  border-spacing: 0;
+}
+
+.auction-table tr {
+  width: 750px;
+  color: #8a98a6;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auction-table tr:hover {
+  background-color: #293440;
+}
+
+.auction-table th {
+  background-color: #293440;
+  padding: 10px 0;
+  flex: 1;
+}
+
+.auction-table th:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+
+.auction-table th:nth-child(3) {
+  border-radius: 0 10px 0 0;
+}
+
+.auction-table td {
+  padding: 20px 10px;
+  color: #fff;
+  border-bottom: 1px solid #1a2026;
+  flex: 1;
+  text-align: center;
+}
+
+.auction-table td:nth-child(1) {
+  color: #248bda;
+}
+
+/** media query */
+
+@media all and (max-width: 768px) {
+  .auction-header {
+    max-width: 600px;
+  }
+
+  .auction-table table {
+    max-width: 600px;
+  }
+
+  .auction-table tr {
+    max-width: 600px;
+  }
+
+  /* .auction-table td {
+    max-width: 600px;
+  } */
+}
+
+@media all and (max-width: 600px) {
+  .auction-header {
+    max-width: 400px;
+  }
+
+  .auction-select {
+    display: flex;
+  }
+
+  .auction-header h2 {
+    /* font-size: 16px; */
+    padding-left: 0;
+  }
+
+  .auction-header h2 span {
+    display: none;
+  }
+
+  .auction-select-one,
+  .auction-select-two {
+    padding: 5px 6px;
+  }
+
+  .auction-table table {
+    max-width: 400px;
+  }
+
+  .auction-table tr {
+    max-width: 400px;
+  }
+
+  /* .auction-table td {
+    max-width: 400px;
+  } */
+}
+
+@media all and (max-width: 400px) {
+  .auction-header {
+    max-width: 300px;
+  }
+
+  .auction-header h2 {
+    font-size: 12px;
+    padding-left: 0;
+  }
+
+  .auction-select-one,
+  .auction-select-two {
+    padding: 0;
+  }
+
+  .auction-table table {
+    max-width: 300px;
+  }
+
+  .auction-table tr {
+    max-width: 300px;
+    font-size: 12px;
+  }
+
+  /* .auction-table td {
+    max-width: 300px;
+  } */
+}
